@@ -2,6 +2,7 @@ import com.google.gson.Gson;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.net.URI;
+import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -18,6 +19,7 @@ public class FilmPlay {
         FilmsEntity film = new FilmsEntity();
 
         System.out.print("\nSeja bem-vindo ao FilmPlay! Aqui você pode obter mais informações sobre filmes!");
+        System.out.print("\nDesenvolvido por Felipe Lunkes (Lunx).");
 
         while (newFilm) {
 
@@ -33,7 +35,9 @@ public class FilmPlay {
 
             }
 
-            String fullQuery = adress + filmQuery + parameters + apiKey;
+            String filmQueryEncoded = URLEncoder.encode(filmQuery, "UTF-8");
+
+            String fullQuery = adress + filmQueryEncoded + parameters + apiKey;
 
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
