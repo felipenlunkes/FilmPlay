@@ -1,3 +1,18 @@
+
+<div align="center">
+
+![](https://img.shields.io/github/license/felipenlunkes/filmplay.svg)
+![](https://img.shields.io/github/stars/felipenlunkes/filmplay.svg)
+![](https://img.shields.io/github/issues/felipenlunkes/filmplay.svg)
+![](https://img.shields.io/github/issues-closed/felipenlunkes/filmplay.svg)
+![](https://img.shields.io/github/issues-pr/felipenlunkes/filmplay.svg)
+![](https://img.shields.io/github/issues-pr-closed/felipenlunkes/filmplay.svg)
+[![](https://img.shields.io/twitter/follow/felipeldev.svg?style=social&label=Follow%20%40felipeldev)](https://twitter.com/felipeldev)
+
+</div>
+
+<hr>
+
 # FilmPlay
 
 <div align="justify">
