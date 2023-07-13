@@ -21,4 +21,6 @@ O FilmPlay é um pequeno projeto desenvolvido para obter informações de filmes
 
 Para obter as informações via solicitação HTTP, o FilmPlay utiliza a biblioteca GSON para serializar e deserializar o JSON enviado como resposta. As bibliotecas e build do aplicativo são gerenciados pelo Gradle.
 
+> Aviso! Você precisa obter uma API Key junto ao OMDb e adicioná-la à variável apiKey, presente em Engine.java (br.com.lunx.filmplay.engine). Sem essa API, você não conseguirá realizar buscas no serviço. Como essa chave é pessoal, a minha não vai com o projeto.
+
 </div>
