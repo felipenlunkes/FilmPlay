@@ -1,6 +1,6 @@
 import com.google.gson.annotations.SerializedName;
 
-public class FilmsEntity {
+public class FilmEntity {
 
     @SerializedName("Title")
     private String filmName;
@@ -8,6 +8,23 @@ public class FilmsEntity {
     private int releaseYear;
     @SerializedName("Released")
     private String releasedTime;
+
+    public String getReleasedTime() {
+        return releasedTime;
+    }
+
+    public String getRuntime() {
+        return runtime;
+    }
+
+    public String getPlot() {
+        return plot;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
     @SerializedName("Runtime")
     private String runtime;
     @SerializedName("Plot")
