@@ -110,11 +110,7 @@ public class ResultInterface extends JFrame implements ActionListener {
 
                 start();
 
-            } catch (IOException ex) {
-
-                throw new RuntimeException(ex);
-
-            } catch (InterruptedException ex) {
+            } catch (IOException | InterruptedException ex) {
 
                 throw new RuntimeException(ex);
 
