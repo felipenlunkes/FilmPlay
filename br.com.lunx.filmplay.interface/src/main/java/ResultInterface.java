@@ -34,7 +34,7 @@ public class ResultInterface extends JFrame implements ActionListener {
         mainWindow.setLayout(null);
         mainWindow.setLocationRelativeTo(null);
         mainWindow.setVisible(true);
-        mainWindow.setSize(700, 500);
+        mainWindow.setSize(700, 600);
 
         jlFilm.setBounds(18, 18, 100, 30);
         jtFilm.setBounds(150, 18, 340, 30);
@@ -49,9 +49,9 @@ public class ResultInterface extends JFrame implements ActionListener {
         jlRuntime.setBounds(18, 318, 100, 30);
         jtRuntime.setBounds(150, 318, 340, 30);
         jlPlot.setBounds(18, 378, 100, 30);
-        jtPlot.setBounds(150, 378, 340, 30);
+        jtPlot.setBounds(150, 378, 340, 90);
 
-        jbNewSearch.setBounds(18, 450, 200, 30);
+        jbNewSearch.setBounds(18, 550, 200, 30);
 
         jtFilm.setText(film.getFilmName());
         jtGenre.setText(film.getGenre());
@@ -81,15 +81,19 @@ public class ResultInterface extends JFrame implements ActionListener {
 
     public void start() throws IOException, InterruptedException {
 
-        FilmEntity queryFilm = new FilmEntity();
-
         Engine engine = new Engine();
 
         SearchInterface searchInterface = new SearchInterface();
 
         String filmQuery = searchInterface.inputSearch();
 
-        queryFilm = engine.searchEngine(filmQuery);
+        while (filmQuery.isBlank()) {
+
+            filmQuery=searchInterface.inputSearch();
+
+        }
+
+        FilmEntity queryFilm = engine.searchEngine(filmQuery);
 
         viewFilm(queryFilm);
 
@@ -103,11 +107,17 @@ public class ResultInterface extends JFrame implements ActionListener {
             mainWindow.setVisible(false);
 
             try {
+
                 start();
+
             } catch (IOException ex) {
+
                 throw new RuntimeException(ex);
+
             } catch (InterruptedException ex) {
+
                 throw new RuntimeException(ex);
+
             }
 
         }
