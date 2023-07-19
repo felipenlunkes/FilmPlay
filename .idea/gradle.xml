@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/br.com.lunx.filmplay.engine" />
             <option value="$PROJECT_DIR$/br.com.lunx.filmplay.entities" />
             <option value="$PROJECT_DIR$/br.com.lunx.filmplay.exception" />
+            <option value="$PROJECT_DIR$/br.com.lunx.filmplay.http" />
             <option value="$PROJECT_DIR$/br.com.lunx.filmplay.input" />
             <option value="$PROJECT_DIR$/br.com.lunx.filmplay.interface" />
           </set>

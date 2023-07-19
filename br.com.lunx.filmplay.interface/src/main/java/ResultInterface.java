@@ -81,7 +81,7 @@ public class ResultInterface extends JFrame implements ActionListener {
 
     public void start() throws IOException, InterruptedException {
 
-        Engine engine = new Engine();
+        Engine engine = new Engine(new JavaHttpClient());
 
         SearchInterface searchInterface = new SearchInterface();
 
