@@ -7,7 +7,7 @@
 ![](https://img.shields.io/github/issues-closed/felipenlunkes/filmplay.svg)
 ![](https://img.shields.io/github/issues-pr/felipenlunkes/filmplay.svg)
 ![](https://img.shields.io/github/issues-pr-closed/felipenlunkes/filmplay.svg)
-[![](https://img.shields.io/twitter/follow/felipeldev.svg?style=social&label=Follow%20%40fmlunx)](https://twitter.com/fmlunx)
+[![](https://img.shields.io/twitter/follow/lunx8086.svg?style=social&label=Follow%20%40lunx8086)](https://twitter.com/lunx8086)
 
 </div>
 
